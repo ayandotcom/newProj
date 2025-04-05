@@ -1,0 +1,71 @@
+.exercise-selection {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  color: var(--text-color);
+  opacity: 0.8;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.exercise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.exercise-card {
+  background: var(--card-background);
+  border-radius: 16px;
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.exercise-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.exercise-card h3 {
+  color: var(--text-color);
+  margin: 0 0 12px 0;
+  font-size: 1.5rem;
+}
+
+.exercise-description {
+  color: var(--text-color);
+  opacity: 0.7;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .exercise-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 40px auto;
+  }
+  
+  .exercise-selection {
+    padding: 20px;
+  }
+} 
